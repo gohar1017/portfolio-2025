@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .education-section {
+            padding: 60px 0;
+        }
+
+        .education-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .education-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Education Timeline -->
+    <div class="container education-section">
+        <h2 class="text-center text-danger fw-bold">📚 My Educational Journey</h2>
+        <p class="text-center text-muted">"Every step in my education has shaped my skills and passion for technology."
+        </p>
+
+        <div class="row gy-4 mt-4">
+            <!-- Matriculation -->
+            <div class="col-md-4">
+                <div class="card education-card border-0 shadow-lg bg-light">
+                    <div class="card-body text-center">
+                        <i class="bi bi-mortarboard text-danger display-4"></i>
+                        <h4 class="mt-3 fw-bold">Matriculation 🎓</h4>
+                        <p class="text-muted">Completed my high school with excellence, specializing in **Science &
+                            Math**.</p>
+                        <span class="badge bg-danger">Year: 2021</span>
+                        <p class="mt-2"><i class="bi bi-star-fill text-warning"></i> Achievements: Highest Marks in
+                            School,
+                            Table Tennis Tournament Winner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FSC -->
+            <div class="col-md-4">
+                <div class="card education-card border-0 shadow-lg bg-white">
+                    <div class="card-body text-center">
+                        <i class="bi bi-book-half text-danger display-4"></i>
+                        <h4 class="mt-3 fw-bold">FSC 🔬</h4>
+                        <p class="text-muted">Pursued **Pre-Engineering**, diving deep into physics, mathematics, and
+                            computer science.</p>
+                        <span class="badge bg-danger">Year: 2023</span>
+                        <p class="mt-2"><i class="bi bi-trophy-fill text-warning"></i> Achievements: Robotics Project,
+                            Programming Competitions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kindergarten -->
+            <div class="col-md-4">
+                <div class="card education-card border-0 shadow-lg bg-light">
+                    <div class="card-body text-center">
+                        <i class="bi bi-pencil text-danger display-4"></i>
+                        <h4 class="mt-3 fw-bold">Kindergarten 🏫</h4>
+                        <p class="text-muted">Where it all began! Learned **ABCs, numbers, and the love for learning.**
+                        </p>
+                        <span class="badge bg-danger">Year: 2013</span>
+                        <p class="mt-2"><i class="bi bi-emoji-laughing-fill text-warning"></i> Memories: First Prize in
+                            Drawing, Best Storyteller.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

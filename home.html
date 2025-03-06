@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        /* Profile Image Styling */
+        .profile-img {
+            position: absolute;
+            top: 50px;
+            margin-top: 30px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ff512f;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        /* Center Content */
+        .home-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Custom Button */
+        .btn-custom {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            color: white;
+            transition: 0.3s ease-in-out;
+            border-radius: 30px;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(221, 36, 118, 0.3);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 20px;
+            }
+
+            .home-content {
+                margin-top: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active fs-5" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Image -->
+    <img src="images/ali.jpg" alt="Profile Image" class="profile-img shadow-lg">
+
+    <!-- Main Content -->
+    <div class="container home-content">
+        <h1 class="display-4 fw-bold text-uppercase gradient-text">Welcome to My Portfolio</h1>
+        <p class="lead text-muted">A passionate developer crafting innovative web and mobile solutions.</p>
+        <p class="fs-5">Explore my skills, projects, and journey in the world of technology.</p>
+        <p class="fs-4 fw-bold"> Hi! My name is Ali Gohar</p>
+        <a href="contact.html" class="btn btn-custom mt-3 shadow">Get in Touch</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        /* Custom Styling */
+        .section-heading {
+            color: #dd2476;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: #ff512f;
+        }
+
+        .progress {
+            height: 15px;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fs-5" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link active fs-5" href="#">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <div class="container py-5">
+        <h1 class="text-center display-5 fw-bold gradient-text">My Skills</h1>
+        <p class="text-center text-muted">Here are some of my key skills in different areas.</p>
+
+        <div class="row mt-4">
+            <!-- Driving Skills Card -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card p-4 shadow-lg border-0">
+                    <div class="text-center">
+                        <!-- Image for Driving Skills (Half Size & Grayscale) -->
+                        <img src="images/car.jpg" alt="Luxury Sports Car"
+                            class="img-fluid rounded-3 mb-3 shadow-sm grayscale-img" style="width: 50%;">
+
+                        <!-- Icon and Title -->
+
+                        <h3 class="section-heading mt-3 text-danger fw-bold">Driving Skills</h3>
+                    </div>
+
+                    <ul class="list-unstyled mt-2">
+                        <li><span class="text-success">✅</span> Licensed to drive <b>cars, motorcycles, and heavy
+                                vehicles</b></li>
+                        <li><span class="text-success">✅</span> Strong understanding of <b>traffic rules & road
+                                safety</b></li>
+                    </ul>
+
+                    <!-- Progress Bar -->
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                            style="width: 85%;">
+                            85%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom CSS -->
+            <style>
+                .grayscale-img {
+                    filter: grayscale(100%);
+                    transition: filter 0.3s ease-in-out;
+                }
+
+                .grayscale-img:hover {
+                    filter: grayscale(0%);
+                }
+            </style>
+
+
+
+            <!-- Language Skills Card -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card p-4 shadow-lg border-0">
+                    <div class="text-center">
+                        <!-- Image for Language Skills (Half Size & Grayscale) -->
+                        <img src="images/language.jpg" alt="Language Word Cloud"
+                            class="img-fluid rounded-3 mb-3 shadow-sm half-img grayscale-img">
+
+                        <!-- Icon and Title -->
+
+                        <h3 class="section-heading mt-3 text-success fw-bold">Language Skills</h3>
+                    </div>
+
+                    <ul class="list-unstyled mt-2">
+                        <li><span class="text-success">✅</span> Fluent in <b>Urdu</b></li>
+                        <li><span class="text-success">✅</span> Proficient in <b>English</b></li>
+                        <li><span class="text-success">✅</span> Basic understanding of <b>French & German</b></li>
+                    </ul>
+
+                    <!-- Progress Bar -->
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated"
+                            style="width: 75%;">75%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom CSS -->
+            <style>
+                .half-img {
+                    width: 50%;
+                    /* Reduce image size to half */
+                }
+
+                .grayscale-img {
+                    filter: grayscale(100%);
+                    /* Convert image to grayscale */
+                }
+            </style>
+
+
+
+            <!-- Computing Skills Card -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card p-4 shadow-lg border-0">
+                    <div class="text-center">
+                        <!-- Image for Computing Skills (Half Size) -->
+                        <img src="images/skill.jpg" alt="Programming Illustration"
+                            class="img-fluid rounded-3 mb-3 shadow-sm half-img">
+
+                        <!-- Icon and Title -->
+
+                        <h3 class="section-heading mt-3 text-danger fw-bold">Computing Skills</h3>
+                    </div>
+
+                    <ul class="list-unstyled mt-2">
+                        <li><span class="text-success">✅</span> Proficient in <b>Python, Java, JavaScript</b></li>
+                        <li><span class="text-success">✅</span> Strong <b>problem-solving & algorithmic skills</b></li>
+                        <li><span class="text-success">✅</span> Knowledge of <b>database management (SQL, MongoDB)</b>
+                        </li>
+                    </ul>
+
+                    <!-- Progress Bar -->
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                            style="width: 90%;">
+                            90%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom CSS -->
+            <style>
+                .half-img {
+                    width: 50%;
+                    /* Reduce image size to half */
+                }
+            </style>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Communication Skills Card -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="card p-4 shadow-lg border-0">
+                    <div class="text-center">
+                        <!-- Image for Communication Skills (Half Size & Grayscale) -->
+                        <img src="images/communication.jpg" alt="Communication Illustration"
+                            class="img-fluid rounded-3 mb-3 shadow-sm half-img grayscale-img">
+
+                        <!-- Icon and Title -->
+
+                        <h3 class="section-heading mt-3 text-warning fw-bold">Communication Skills</h3>
+                    </div>
+
+                    <ul class="list-unstyled mt-2">
+                        <li><span class="text-success">✅</span> Confident in <b>public speaking & presentations</b></li>
+                        <li><span class="text-success">✅</span> Excellent at <b>team collaboration & leadership</b></li>
+                    </ul>
+
+                    <!-- Progress Bar -->
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-info text-dark progress-bar-striped progress-bar-animated"
+                            style="width: 80%;">
+                            80%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom CSS -->
+            <style>
+                .half-img {
+                    width: 50%;
+                    /* Reduce image size to half */
+                }
+
+                .grayscale-img {
+                    filter: grayscale(100%);
+                    /* Convert image to grayscale */
+                }
+            </style>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
